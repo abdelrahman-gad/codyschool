@@ -9,11 +9,14 @@
     padding: 0;
     --white:#fff;
     --black:#000;
-    --teal:#A3C3B8;
+
     --crimson:#E77A7D;
     --darkCrimson:#A59D96;
     --dark:#293235;
+    
     --gray:#EDEDED;
+    --darkTeal:#708B82;
+    --teal:#A3C3B8;
     --lightTeal:#CEE3DC;
     --lighterTeal:#E1F1EC;
     font-family: 'Quicksand', sans-serif;
@@ -339,7 +342,8 @@
 /* gallary */
 
 .mgallary{
-  padding: 30px;
+  padding: 20px;
+  padding-bottom: 10px;
 }
 
 .mgallary h3{
@@ -486,6 +490,246 @@
 }
 
 /* end counters */
+
+
+/* latest posts */
+
+
+.latest-posts{
+  background: var(--grey);
+}
+.latest-posts h3{
+  color: var(--teal);
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+.latest-posts p{
+  color: var(--crimson);
+  font-size: 22px;
+}
+
+/* end latest-posts */
+
+/* tiled gallary */
+.tiled{
+  background: var(--teal);
+  height: 500px;
+
+}
+/* tiled gallary */
+/* testimonials */
+.testimonials{
+  background: var(--white);
+}
+.testimonials h3{
+  color: var(--teal);
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+.testimonials p.heading ,.testimonials p.name{
+  color: var(--crimson);
+  font-size: 22px;
+}
+.testimonials p.qoute{
+  font-size: 18px;
+}
+
+.testimonials img{
+  border-radius: 50%;
+}
+/* end testimonials */
+
+/* posts */
+.posts{
+  background-color: var(--dark);
+  color: var(--white)
+}
+
+.posts h3.title a{
+  color: var(--white);
+  text-decoration: none;
+}
+.posts h3.title a:hover{
+  color: var(--teal);
+}
+.posts a.link{
+  color: var(--crimson);
+  background-color: var(--white);
+  padding: 12px 16px;
+  text-decoration: none;
+  width: 180px;
+  font-weight: bold;
+  font-size: 16px;
+  border: 1px solid var(--crimson);
+  transition: ease-in-out 0.4s all;
+}
+.posts a.link:hover{
+  color: var(--white);
+  background-color: var(--crimson);
+}
+.posts .img-container {
+  position: relative;
+
+}
+
+.posts .img-overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #293235;
+  opacity: 0;
+  transition: ease-in-out 0.4s all;
+}
+
+.posts .img-overlay:hover{
+  opacity: 0.4;
+  cursor: pointer;
+}
+/* end posts */
+/* features */
+.features {
+  background: var(--white);
+
+}
+
+.features h3{
+  color: var(--teal);
+  font-size: 40px;
+}
+.features p{
+  color: var(--crimson);
+  font-size: 22px;
+}
+
+.features .feature .quest{
+  font-size: 30px;
+  color: var(--black);
+}
+
+.features .feature a.link{
+  color: var(--white);
+  background-color: var(--crimson);
+  padding: 12px 16px;
+  text-decoration: none;
+  width: 180px;
+
+  font-size: 18px;
+  border: 1px solid var(--crimson);
+  transition: ease-in-out 0.4s all;
+}
+.features a.link:hover{
+  color: var(--crimson);
+  background-color: var(--white);
+}
+/* end features */
+/* social-bar  */
+
+.social-bar{
+  background-color: var(--lightTeal);
+}
+.social-bar ul{
+  text-decoration: none;
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.social-bar ul li {
+  list-style-type: none;
+ 
+  padding: 5px 7px 9px 8px;
+  height: 12px;
+
+}
+.social-bar ul li  a{
+
+ padding: 8px 12px; 
+
+  
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: var(--teal);
+
+  color: var(--white)
+}
+.social-bar ul li a i{
+  font-size: 18px;
+}
+.social-bar a:hover {
+ background: var(--darkTeal);
+}
+/* end social-bar */
+.footer{
+  background-color: var(--lighterTeal);
+}
+.footer h2.title{
+  color: var(--teal);
+}
+.footer p{
+  color: var(--darkTeal);
+}
+
+.footer ul{
+  list-style: none;
+}
+footer ul.menu{
+  padding: 26px;
+}
+.footer ul li {
+  text-transform: uppercase;
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
+.footer ul li a{
+  color: var(--darkTeal);
+  text-decoration: none;
+font-size: 14px;
+font-weight: 350;
+}
+.footer ul li a:hover{
+color: var(--crimson);
+}
+
+.footer ul.menu  li{
+ border-bottom: 1px solid var(--darkTeal);
+}
+.footer ul.menu  ul.sub-menu{
+  margin-left: 30px;
+}
+.footer ul.menu ul.sub-menu li{
+  border: none;
+}
+
+/* end footer  */
+
+
+/* copyrights */
+.copyrights{
+  background-color: var(--darkTeal);
+  color: var(--gray);
+ 
+}
+.copyrights  h5{
+  font-size: 16px;
+  padding-top: 6px;
+}
+/* end copyrights */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

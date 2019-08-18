@@ -76,8 +76,8 @@ $(document).on("click", ".img-c.active", function() {
   time: 1000
 });
 
-
-
+// latest posts cycle2 carousel
+$( '.slideshow' ).cycle();
 
 
 
