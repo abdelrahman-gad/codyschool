@@ -9,17 +9,19 @@
     padding: 0;
     --white:#fff;
     --black:#000;
-
+    --brown:#DD9933;
+    --silver: #a5b1b9;
     --crimson:#E77A7D;
     --darkCrimson:#A59D96;
-    --dark:#293235;
-    
+    --dark:#293235;   
     --gray:#EDEDED;
     --darkTeal:#708B82;
     --teal:#A3C3B8;
     --lightTeal:#CEE3DC;
     --lighterTeal:#E1F1EC;
+    --rose:#FEEFF0;
     font-family: 'Quicksand', sans-serif;
+
 }
 
 
@@ -30,6 +32,7 @@
 .navigation {
     height: 70px;
     background: var(--teal);
+    
   }
   
   .brand {
@@ -483,23 +486,23 @@
 /* end counters */
 
 
-/* latest posts */
+/* latest home-posts */
 
 
-.latest-posts{
+.latest-home-posts{
   background: var(--grey);
 }
-.latest-posts h3{
+.latest-home-posts h3{
   color: var(--teal);
   font-size: 42px;
   margin-bottom: 16px;
 }
-.latest-posts p{
+.latest-home-posts p{
   color: var(--crimson);
   font-size: 22px;
 }
 
-/* end latest-posts */
+/* end latest-home-posts */
 
 /* tiled gallary */
 .tiled{
@@ -530,20 +533,20 @@
 }
 /* end testimonials */
 
-/* posts */
-.posts{
+/* home-posts */
+.home-posts{
   background-color: var(--dark);
   color: var(--white)
 }
 
-.posts h3.title a{
+.home-posts h3.title a{
   color: var(--white);
   text-decoration: none;
 }
-.posts h3.title a:hover{
+.home-posts h3.title a:hover{
   color: var(--teal);
 }
-.posts a.link{
+.home-posts a.link{
   color: var(--crimson);
   background-color: var(--white);
   padding: 12px 16px;
@@ -554,16 +557,16 @@
   border: 1px solid var(--crimson);
   transition: ease-in-out 0.4s all;
 }
-.posts a.link:hover{
+.home-posts a.link:hover{
   color: var(--white);
   background-color: var(--crimson);
 }
-.posts .img-container {
+.home-posts .img-container {
   position: relative;
 
 }
 
-.posts .img-overlay{
+.home-posts .img-overlay{
   position: absolute;
   top: 0;
   right: 0;
@@ -574,11 +577,11 @@
   transition: ease-in-out 0.4s all;
 }
 
-.posts .img-overlay:hover{
+.home-posts .img-overlay:hover{
   opacity: 0.4;
   cursor: pointer;
 }
-/* end posts */
+/* end home-posts */
 /* features */
 .features {
   background: var(--white);
@@ -707,6 +710,136 @@ color: var(--crimson);
   padding-top: 6px;
 }
 /* end copyrights */
+
+/* -------------------------------end home page --------------------------------------------- */
+
+
+/* ------------------------------start blog page -------------------------------------------- */
+.blog{
+  padding: 30px;
+}
+
+
+/* breadcrumb nav */
+nav{
+ 
+  width: 100%;
+  height: 40px;
+  padding: 0px;
+}
+nav .breadcrumb{
+  padding: 10;
+ font-size: 18px;
+  background: var(--rose);
+}
+nav .breadcrumb a{
+  color: var(--white);
+  text-decoration: none;
+
+}
+nav .breadcrumb a:hover{
+  color: var(--crimson);
+}
+/* end bread crumb */
+/* post */
+.post h2.title a{
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--white);
+}
+
+
+.post img{
+  border: 4px solid var(--crimson);
+  opacity: 1;
+}
+.post img:hover{
+  opacity: 0.5;
+}
+.post h2.title a:hover{
+  color: var(--brown);
+}
+.post .meta , .post .info{
+  color: var(--silver);
+  font-size: 16px;
+}
+.post .info {
+  border-top: 1px solid var(--silver);
+  border-bottom: 1px solid var(--silver);
+  padding: 8px 0;
+}
+
+/* end posts */
+
+/* sidebar */
+.blog .sidebar {
+  padding-left: 30px;
+  
+}
+.blog .sidebar .widget{
+ padding-left: 40px;
+ padding-bottom: 20px;
+
+}
+.blog .sidebar .title{
+  font-size: 25px;
+}
+.blog .sidebar .widget ul {
+  list-style-type: none;
+}
+.blog .sidebar .widget ul li{
+  border-bottom: 1px solid var(--dark);
+  padding-bottom: 5px;
+}
+.blog .sidebar .widget ul li span.num{
+  font-size: 14px;
+}
+.blog .sidebar .widget ul li a{
+  text-decoration: none;
+  color: var(--white);
+  font-size: 14px;
+}
+.blog .sidebar .widget ul li a:hover{
+  color: var(--crimson);
+}
+
+.sidebar .archives-dropdown p ,.sidebar .categories-dropdown p{
+ font-size: 14px;
+}
+
+.sidebar .calender table, .sidebar .calender td,.sidebar .calender th{
+border: 1px solid var(--silver);
+padding:0 16px;
+color: var(--darkTeal);
+font-size: 14px;
+}
+
+
+/* end sidebar */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+ .blog .sidebar{
+   padding-left: 0;
+ }
+}
+
+
+
+/* -------------------------------end blog page----------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
