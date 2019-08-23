@@ -139,9 +139,14 @@ margin: 15px auto;
     padding: 40px;
     color: var(--white);
 }
+
 .welcome p{
     font-size: 18px;
     line-height: 1.9;
+    text-align: center;
+}
+.welcome h3{
+  text-align: center;
 }
 .welcome a{
     border: 1px solid var(--white);
